@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 const pages = getPages();
 
+const siteName = "Sophie Sara";
 console.log(pages)
 
 export default function Header(){
@@ -14,7 +15,7 @@ export default function Header(){
   
   return (
     <header className="header">
-      <h1>Sophie Sara</h1>
+      <h1>{siteName}</h1>
       <ul>
         {pages.map((page, index) => (
           <li key={index}>

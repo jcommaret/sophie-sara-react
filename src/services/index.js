@@ -3,7 +3,7 @@
  **/
 
 /** API_URL LOCALHOST, change this when in production */
-const API_URL = "http://www.sophie-sara.com/wp-json/wp/v2"
+const API_URL = "http://www.sophie-sara.com/wp-json"
 /**
  * This function to create a fetch request to the API and return the data in json format
  * @param {string} API_URL api public url

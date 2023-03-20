@@ -1,27 +1,12 @@
-import React from "react";
-import { getSiteInfo, getPages } from "../../services/services";
-import { useEffect, useState } from "react";
+import Navigation from "../navigation"
 
-export default function Header(){
-  const [siteInfo, setSiteInfo] = useState("")
-  const [pages, setPages] = useState([])
-
-  useEffect(() => {
-    getSiteInfo().then((siteInfo) => {setSiteInfo(siteInfo)})
-    getPages().then((pages) => {setPages(pages)})
-  }, [])
-
+export default function Header({siteInfo}){
+  const {name, description} = siteInfo
   return (
     <header className="header">
-      <h1>{siteInfo.name}</h1>
-      <p>{siteInfo.description}</p>
-      <ul>
-        {pages.map((page, index) => (
-          <li key={index}>
-            <a href={page.link}>{page.title.rendered}</a>
-          </li>
-        ))}
-      </ul>
+      <h1>{name}</h1>
+      <p>{description}</p>
+      <Navigation />
     </header>
   )
 }

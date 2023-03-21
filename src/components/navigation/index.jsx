@@ -12,12 +12,14 @@ export default function Navigation(){
   }, [])
   
   return (
-  <ul>
-    {pages.map((page, index) => (
-      <li key={index}>
-        <Link to={page.link}>{page.title.rendered}</Link>
-      </li>
-    ))}
-  </ul>
+    <nav className="navigation">
+      <ul>
+        {pages.map((page, index) => (
+          <li key={index}>
+            <Link title={page.title.rendered} to={page.link}>{page.title.rendered}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   )
 }

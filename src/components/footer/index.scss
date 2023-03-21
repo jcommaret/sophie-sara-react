@@ -1,0 +1,12 @@
+@use "../../styles/colors" as c;
+
+.footer{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: c.$purple-light;
+  padding:20px;
+  p{
+    font-weight: 100;
+  }
+}

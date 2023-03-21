@@ -1,5 +1,8 @@
 import { getPages } from "../../services/services";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+import "./index.scss";
 
 export default function Navigation(){
   const [pages, setPages] = useState([])
@@ -12,7 +15,7 @@ export default function Navigation(){
   <ul>
     {pages.map((page, index) => (
       <li key={index}>
-        <a href={page.link}>{page.title.rendered}</a>
+        <Link to={page.link}>{page.title.rendered}</Link>
       </li>
     ))}
   </ul>

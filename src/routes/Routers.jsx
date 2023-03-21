@@ -6,7 +6,6 @@ export default function Routers() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        
       </Route>
     </Routes>
   )

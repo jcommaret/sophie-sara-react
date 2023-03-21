@@ -5,6 +5,8 @@ import { getSiteInfo } from "../../services/services";
 import Header from "../../components/header";
 import Footer from "../../components/footer";
 
+import "./index.scss";
+
 export default function Layout() {
   const [siteInfo, setSiteInfo] = useState("")
   useEffect(() => {

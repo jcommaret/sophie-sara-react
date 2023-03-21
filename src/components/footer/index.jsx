@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function Header({siteInfo}){
+export default function Footer({siteInfo}){
+  const year = new Date().getFullYear()
   return (
     <footer className="footer">
-      <p>{siteInfo.name}</p>
+      <p>© {year} {siteInfo.name}</p>
     </footer>
   )
 }

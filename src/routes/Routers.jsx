@@ -4,6 +4,7 @@ import { getPages } from "../services/services"
 import { getPosts } from "../services/services"
 import Layout from "../pages/Layout"
 import PageComponent from "../pages/Page"
+import ArticleComponent from "../pages/Page"
 import Homepage from "../pages/Homepage"
 
 export default function Routers() {
@@ -22,7 +23,7 @@ export default function Routers() {
           <Route key={index} path={page.slug} element={<PageComponent content={ page } />} />
         ))}
         {posts.map((post, index) => (
-          <Route key={index} path={post.slug} element={<PageComponent content={ post } />} />
+          <Route key={index} path={post.slug} element={<ArticleComponent content={ post } />} />
         ))}
       </Route>
     </Routes>

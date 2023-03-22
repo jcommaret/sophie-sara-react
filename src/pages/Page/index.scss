@@ -1,0 +1,79 @@
+@use "../../styles/colors" as c;
+
+.page{
+  margin-top:40px;
+  margin-left:1px;
+  margin-right: 1px;
+  margin-bottom:40px;
+  min-height: 750px;
+  h1{
+    color:c.$purple-dark;  
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  p{
+    margin-bottom: 30px;
+    line-height:30px;
+  }
+  iframe{
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 100% !important;
+  }
+  ul{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    li{
+      line-height: 25px;
+      margin-bottom: 5px;
+      a{
+        color:c.$purple-dark;
+      }
+    }
+  }
+  
+  figure{
+    margin-bottom:20px;
+    margin-right:25px;
+    border:1px solid c.$purple-light;
+    background-color: c.$purple-lighter; 
+    max-width: 100% - (5) ;
+    padding: 20px;
+    img{
+      max-width: 100% !important;
+      object-fit: cover;
+    }
+  }
+  .alignleft{
+    float: left;
+    margin-right:20px;
+  }
+  .alignright{
+    float: right;
+    margin-left: 20px;
+  }
+  .aligncenter{
+    margin:auto;
+  }
+  .wp-caption-text{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top:10px;
+    font-weight: 700;
+    color:c.$purple-dark;
+  }
+  ul{
+    visibility: visible !important;
+  }
+  .thumbnails-2{
+    display: none;
+  } 
+}
+#biographie{
+  img{margin-top: 5px;}
+}
+#cours-de-chant{
+  img{margin-top: 35px;}
+}

@@ -4,9 +4,13 @@
   display:flex;
   flex-direction: row;
   background-color: c.$purple-dark;
+  a{
+    text-decoration: none;
+  }
   h1{
     font-weight: 300;
     padding:20px;
     color:c.$white;
+    
   }
 }

@@ -7,7 +7,8 @@ const API_URL = "http://www.sophie-sara.com/wp-json"
 /**
  * This function to create a fetch request to the API and return the data in json format
  * @param {string} API_URL api public url
- * @param {string} url service defined routes
+ * @param {string} url
+ * @param {string} slug service defined routes
  * @returns data from API
  */
 
